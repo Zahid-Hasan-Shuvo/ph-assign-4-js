@@ -58,23 +58,21 @@
 
 //? problem 5
 
-function gemsToDiamond(firstFrndGem,secondFrndGem,thirdFrndfGem){
-  const firstFrndDmnd=firstFrndGem*21;
-  const secondFrndDmnd=secondFrndGem*32;
-  const thirdFrndDmnd=thirdFrndfGem*43;
-  const totalDiamond=firstFrndDmnd+secondFrndDmnd+thirdFrndDmnd;
-let doubleTotal=2*totalDiamond;
-// console.log(doubleTotal);
-  // if(totalDiamond<1000){
-  //   return totalDiamond;
-  // }
-if(totalDiamond > doubleTotal){
-  return totalDiamond-2000;
-  
+function gemsToDiamond(firstGem,secondGem,thirdGem){
+ const first=firstGem*21;
+ const second=secondGem*32;
+ const third=thirdGem*43;
+ const totalDiamond=first+second+third;
+const doubleTotal=(2*totalDiamond);
 
- }
-
+  if(totalDiamond<1000){
+    return totalDiamond;
+  }
+ else(totalDiamond > doubleTotal)
+    const newRe= totalDiamond-2000;
+   return newRe;
+ 
 }
 
-const result=gemsToDiamond(1,1,1)
+const result=gemsToDiamond(20, 200, 50)
 console.log(result);
